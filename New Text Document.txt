@@ -1,0 +1,157 @@
+<body>
+  
+  
+  <div class="page">
+    <div id="navbar">
+      <span id="intro">CAR STORE</span>
+      <div id="carbar">
+        <span class="sp"><a href="">MODEL A</a></span>
+        <span class="sp"><a href="">MODEL B</a></span>
+        <span class="sp"><a href="">MODEL C</a></span>
+        <span class="sp"><a href="">MODEL NEW</a></span>
+      </div>
+      <div id="menus">
+        <span class="sp"><a href="">SHOP</a></span>
+        <span class="sp"><a href="">SIGN IN</a></span>
+      </div>
+    </div>
+    <div id="model">
+      <span>MODEL A</span>
+      <div class="buttons">
+        <span><a href="#">ORDER NOW</a></span>
+        <span><a href="#">TEST DRIVE</a></span>
+        <span><a href="#">LEARN MORE</a></span>
+        <span><a href="#">SHOP INVENTORY</a></span>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="page">
+    <div id="model">
+      <span>MODEL B</span>
+      <div class="buttons">
+        <span><a href="#">ORDER NOW</a></span>
+        <span><a href="#">TEST DRIVE</a></span>
+        <span><a href="#">LEARN MORE</a></span>
+        <span><a href="#">SHOP INVENTORY</a></span>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="page">
+    <div id="model">
+      <span>MODEL C</span>
+      <div class="buttons">
+        <span><a href="#">ORDER NOW</a></span>
+        <span><a href="#">TEST DRIVE</a></span>
+        <span><a href="#">LEARN MORE</a></span>
+        <span><a href="#">SHOP INVENTORY</a></span>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+---------------------------------------------------------------
+css
+body{
+  margin: 0px;
+}
+
+.page {
+  width:100%;
+  height:100vh;
+  background-size:cover;
+  background-position:center;
+  backround-repeat:no-repeat;
+}.page:nth-child(1){
+  background-image:url("https://images.unsplash.com/photo-1449130015084-2d48a345ae62?ixlib=rb-0.3.5&s=bd50a2f97e21dc5e433217eec713ea15&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb");
+}.page:nth-child(2){
+  background-image:url("https://cdn.vox-cdn.com/uploads/chorus_image/image/59319581/A182669_medium.0.jpg");
+}.page:nth-child(3){
+  background-image:url("http://limberi.by/assets/templates/limbery/images/img1000.jpg");
+}
+
+#navbar{
+  width:100%;
+  height:50px;
+  overflow:hidden;
+}
+
+#intro {
+  position:absolute;
+  font-family:sans-serif;
+  font-weight:bold;
+  color:white;
+  font-size:24px;
+  margin:0px;
+  padding:10px;
+}
+
+#carbar{
+  position:absolute;
+  display:inline;
+  width:100%;
+  text-align:center;
+}
+.sp {
+  font-family:sans-serif;
+  font-weight:bold;
+  color:white;
+  font-size:16px;
+  margin-left:10px;
+  line-height:50px;
+}
+#navbar span a{
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+#navbar span a:hover{
+  color:gray;
+}
+
+#menus{
+  position:absolute;
+  right:10px;
+}
+#model{
+  display:inline-block;
+  height:300px;
+  width:100%;
+  margin-top:10%;
+  text-align:center;
+}
+#model > span{
+  color: white;
+  font-family:verdana;
+  font-size:36px;
+}
+
+.buttons{
+  display:inline-block;
+  width:100%;
+  height:50px;
+  margin-top:50px;
+  text-align:center;
+}
+
+.buttons span{
+  font-family:verdana;
+  font-weight:bold;
+  padding:5px 20px;
+  height:20px;
+  color:#34495e;
+  border: 3px solid #34495e;
+  border-radius:99px;
+  transition:0.3s;
+}
+.buttons span:hover{
+  background-color:#34495e;
+}
+
+a {
+  text-decoration:none;
+}.buttons a { color: #34495e}.buttons a:hover{color:white;}
